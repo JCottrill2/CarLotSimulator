@@ -15,6 +15,7 @@ namespace CarLotSimulator
             Make = make;
             Model = model;
             Year = year;
+            CarLot.numberOfCars++;
         }
 
         public string Make { get; set; }

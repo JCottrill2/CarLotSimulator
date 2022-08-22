@@ -29,15 +29,21 @@ namespace CarLotSimulator
             instance.Model = "EV6";
             instance.Year = 2022;
             instance.IsDriveable = true;
+            Console.WriteLine($"Number of cars created:{CarLot.numberOfCars}");
+            Console.WriteLine();
 
             //object initializer syntax:
             var instance2 = new Car()
             { Make = "Chevrolet", Model = "Camaro", EngineNoise = "loud", IsDriveable = true };
             carlot.CarList.Add(instance2);
+            Console.WriteLine($"Number of cars created:{CarLot.numberOfCars}");
+            Console.WriteLine();
 
             //custom constructor
             var instance3 = new Car("Tesla", "Model 3", 2020);
             carlot.CarList.Add(instance3);
+            Console.WriteLine($"Number of cars created:{CarLot.numberOfCars}");
+            Console.WriteLine();
 
 
             //*************BONUS*************//
@@ -51,18 +57,17 @@ namespace CarLotSimulator
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
-            Console.WriteLine($"Number of cars created:{CarLot.numberOfCars}");
-            Console.WriteLine();
 
-            foreach (var item in carlot.CarList)
-            {
-                Console.WriteLine(item.Year);
-                Console.WriteLine(item.Make);
-                Console.WriteLine(item.Model);
-                Console.WriteLine();
-                item.MakeEngineNoise("vroom");
-                item.MakeHonkNoise();
-            }
+
+            //foreach (var item in carlot.CarList)
+            //{
+            //    Console.WriteLine(item.Year);
+            //    Console.WriteLine(item.Make);
+            //    Console.WriteLine(item.Model);
+            //    Console.WriteLine();
+            //    item.MakeEngineNoise("vroom");
+            //    item.MakeHonkNoise();
+            //}
 
 
         }
