@@ -4,11 +4,11 @@ using System.Text;
 
 namespace CarLotSimulator
 {
-    internal class Car
+    public class Car
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
         }
         public Car(string make, string model, int year)
         {
